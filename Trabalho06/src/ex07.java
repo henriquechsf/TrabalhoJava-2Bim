@@ -8,11 +8,14 @@ public class ex07 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		int[] codProduto = new int[10];
+		int[] codProduto = new int[3];
+		String[] nomeProduto = new String[3];
 		
 		for (int i = 0; i < codProduto.length; i++) {
 			System.out.println("Digite o código do " + (i + 1) + "º produto: ");
 			codProduto[i] = sc.nextInt();
+			System.out.println("Digite o nome do " + (i + 1) + "produto");
+			nomeProduto[i] = sc.next();
 		}//leitura dos dados
 		
 		System.out.println("Qual cod do produto deseja buscar?");
@@ -37,6 +40,7 @@ public class ex07 {
 			
 			if (codBusca == codProduto[meio]) {
 				System.out.println("Produto encontrado!");
+				System.out.println("Cod: " + codProduto[meio] + "\nProduto: " + nomeProduto[meio]);
 				return;
 			} else if (codBusca < codProduto[meio]) {
 				fim = meio - 1;
