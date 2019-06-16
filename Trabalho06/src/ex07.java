@@ -14,7 +14,7 @@ public class ex07 {
 		for (int i = 0; i < codProduto.length; i++) {
 			System.out.println("Digite o código do " + (i + 1) + "º produto: ");
 			codProduto[i] = sc.nextInt();
-			System.out.println("Digite o nome do " + (i + 1) + "produto");
+			System.out.println("Digite o nome do " + (i + 1) + "º produto");
 			nomeProduto[i] = sc.next();
 		}//leitura dos dados
 		
